@@ -1,6 +1,6 @@
 import { FlatList, SectionList, StyleSheet, Text, View,TextInput, Button } from 'react-native';
 import { useState } from 'react';
-import { COLORS, PlaceData } from '../global/constants'
+import { PlaceData } from '../global/constants/dummy'
 
 ///////////
 
@@ -22,7 +22,10 @@ export default function HomeScreen({ navigation }) {
         keyExtracto={(item) => item.id}
         shadowsVerticalScrollIndicator={false}
         // ListHeaderComponent
-/>
+        />
+
+      <Text>Home Screen</Text>
+
 
     </View>
   );

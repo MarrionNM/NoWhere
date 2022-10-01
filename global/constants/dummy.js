@@ -1,4 +1,4 @@
-const PLaceData = [
+const PlaceData = [
     {
         id: "01",
         name: "Asia",
@@ -127,4 +127,7 @@ const PLaceData = [
             },
         ]
     }
-]
+];
+
+
+export { PlaceData };

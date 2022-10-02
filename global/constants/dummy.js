@@ -4,6 +4,7 @@ const PlaceData = [
         name: "Asia",
         Description: "Asia is a landmass, which is either considered a continent in its own right or a subcontinent of Eurasia. It shares the continental landmass with Afro-Eurasia with Africa. Asia covers an area of 44,579,000 square kilometres, about 30% of Earth's total land area and 8.7% of the Earth's total surface area.",
         Population: "4 561 000 000",
+        image: "",
         attractions:[
             {
                 id: "001",
@@ -31,11 +32,13 @@ const PlaceData = [
             },
         ]
     },
+
     {
         id: "02",
         name: "Africa",
         Description: "Africa is the world's second-largest and second-most populous continent, after Asia in both cases. At about 30.3 million km² including adjacent islands, it covers 6% of Earth's total surface area and 20% of its land area. With 1.4 billion people as of 2021, it accounts for about 18% of the world's human population.",
         Population: "1 216 000 000",
+        image: "",
         attractions:[
             {
                 id: "001",
@@ -63,11 +66,13 @@ const PlaceData = [
             },
         ]
     },
+
     {
         id: "03",
         name: "South America",
         Description: "South America is a continent entirely in the Western Hemisphere and mostly in the Southern Hemisphere, with a relatively small portion in the Northern Hemisphere. It can also be described as the southern subregion of a single continent called America.",
         Population: "422 500 000",
+        image: "",
         attractions:[
             {
                 id: "001",
@@ -95,11 +100,13 @@ const PlaceData = [
             },
         ]
     },
+
     {
         id: "04",
         name: "",
         Description: "",
         Population: "",
+        image: "",
         attractions:[
             {
                 id: "001",
@@ -130,4 +137,4 @@ const PlaceData = [
 ];
 
 
-export { PlaceData };
+export default PlaceData;

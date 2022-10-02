@@ -1,7 +1,7 @@
 import { FlatList, SectionList, StyleSheet, Text, View,TextInput, Button } from 'react-native';
 import { useState } from 'react';
 import { PlaceData } from '../global/constants/dummy'
-
+import { PlaceCard } from '../components/placeCard'
 ///////////
 
 // const Item = ({ title }) => (
@@ -18,10 +18,11 @@ export default function HomeScreen({ navigation }) {
 
       <FlatList
         data={PlaceData}
-        renderItem={({item}) => <Text>{item.name}</Text>}
+        renderItem={({item}) =>  <PlaceCard data={item}/>}
+
         keyExtracto={(item) => item.id}
         shadowsVerticalScrollIndicator={false}
-        // ListHeaderComponent
+        style={{width: "100%", padding: 20}}
         />
 
       <Text>Home Screen</Text>

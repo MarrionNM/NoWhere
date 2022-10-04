@@ -19,7 +19,7 @@ const PlaceCard = ({data}) => {
 
                 {/* <CircleButton imgUrl="" right={10} top={10}/> */}
 
-                <SubInfo />
+                {/* <SubInfo /> */}
 
                 <View>
 
@@ -31,4 +31,4 @@ const PlaceCard = ({data}) => {
     );
 }
 
-export default PlaceCard;
+export default {PlaceCard};

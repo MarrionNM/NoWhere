@@ -41,13 +41,23 @@ function mainNavigation(){
                         }
                         return <Ionicicons name={iconName} size={size} color={color}/>
                     },
-
+                    tabBarActiveTintColor: "green",
+                    tabBarLabelStyle: {
+                      paddingBottom: 0,
+                      fontSize: 14
+                    },
+                    tabBarStyle: [
+                      {
+                        display: "flex"
+                      },
+                    ]
                     
                     })}
                     tabBarOptions={{
-                        activeTintColor: 'green', inaciveTintColor: 'grey',
-                        labelStyle: { paddingBottom: 0, fontSize:14 }, style: {padding: 10, height: 80}
+                        inaciveTintColor: 'grey',
+                        labelStyle: { paddingBottom: 0, fontSize:14 }, style: {padding: 10, height: 80},
                     }}
+
                 >
 
                 <Tab.Screen name={homeName} component={HomeScreen}/>

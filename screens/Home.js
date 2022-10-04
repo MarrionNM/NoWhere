@@ -1,31 +1,78 @@
-import { FlatList, SectionList, StyleSheet, Text, View,TextInput, Button } from 'react-native';
+import { FlatList, SectionList, StyleSheet, Text, View,TextInput, Button, Image, TouchableHighlight, Touchable } from 'react-native';
 import { useState } from 'react';
-import { PlaceData } from '../global/constants/dummy'
-import { PlaceCard } from '../components/placeCard'
-///////////
+import PeopleData from '../global/constants/test';
 
-// const Item = ({ title }) => (
-//   <View style={styles.item}>
-//     <Text style={styles.title}>{title}</Text>
-//   </View>
-// );
+import { PlaceData } from '../global/constants/dummy';
 
 
-export default function HomeScreen({ navigation }) {
+
+//export default function
+const HomeScreen = () => {
+  // const plcData = useState(PlaceData);
+
+  // const handleSearch = (value) => {
+  //   if (value.length ===0) {
+  //     alert({value});
+  //   }
+  // }
+
+  // const filterdata = PlaceData.filter((item) => item.name.toLowerCase().includes(value.toLowerCase()));
+
+  // if (filterdata.length === 0) {
+  //   alert(filterdata);
+  // }
+  // else{
+  //   alert("Ahh");
+  // }
+  // renderPlaces = ({item}) => {
+  //   return {
+  //     // <TouchableHighlight>
+  //       <View>
+  //         <Text>{item.name}</Text>
+  //       </View>
+  //     // </TouchableHighlight>
+  //     }
+  // }
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
 
-      <FlatList
-        data={PlaceData}
-        renderItem={({item}) =>  <PlaceCard data={item}/>}
+      <View>
 
-        keyExtracto={(item) => item.id}
-        shadowsVerticalScrollIndicator={false}
-        style={{width: "100%", padding: 20}}
-        />
+        <FlatList
+          data={PlaceData}
+          renderItem={ ({item}) =>
 
-      <Text>Home Screen</Text>
+          <View style={{ height: 250, margin: 10, marginBottom: 20 }}>
+
+              <Image source={item.image}
+                  resizeMode="cover"
+                  style={{
+                      width:"100%", height:"100%",
+                      borderTopLeftRadius: 14,
+                      borderTopRightRadius: 14,
+              }}/>
+
+              <View>
+                  <Text>{item.name}</Text>
+              </View>
+
+              {/* <CircleButton imgUrl="" right={10} top={10}/> */}
+
+              {/* <SubInfo /> */}
+
+
+          </View>
+
+          }
+          
+          keyExtractor={(item) => item.id}
+          shadowsVerticalScrollIndicator={false}
+          style={{width: "100%", padding: 10}}
+          />
+      </View>
+
+      <Button title="Go to Details" onPress={() => alert("Hello there!")}/>
 
 
     </View>
@@ -35,7 +82,13 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 2,
+    paddingRight: 2
   },
 });
+
+
+export default HomeScreen;

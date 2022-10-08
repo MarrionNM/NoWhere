@@ -1,6 +1,5 @@
-import { FlatList, SectionList, StyleSheet, Text, View,TextInput, Button, Image, TouchableHighlight, Touchable, TouchableOpacity } from 'react-native';
-import { useState } from 'react';
-
+import { FlatList, StyleSheet, Text, View,TextInput, Image, TouchableOpacity } from 'react-native';
+import React from 'react';
 import { PlaceData } from '../api/dummy';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -69,11 +68,11 @@ const HomeScreen = () => {
   const [selectatedSearchIndex, setselectatedSearchIndex] = React.useState(0);
   const FilterSearch = ({filtertext}) => {
     return ( 
-      <View style={{ height: 15, padding:6 }}>
+      <View style={{ height: 25, padding:20, flexDirection:"row" }}>
         {areas.map((item, index) => (
-          <TouchableOpacity key={index} activeOpacity={0.8}>
+          <TouchableOpacity key={index} activeOpacity={1}>
             <View>
-              <Text style={{fontSize:17, fontWeight:"bold", color:selectatedSearchIndex == index ? "grey":"#1e96e1"}}>{filtertext}</Text>
+              <Text style={{fontSize:17, height:20, fontWeight:"bold", color:selectatedSearchIndex == index ? "#1e96e1":"grey"}}>gffgh</Text>
             </View>
             {selectatedSearchIndex == index && (
               <View style={{height:3, width:30, backgroundColor:"#1e96e1", marginTop:2}}/>
@@ -87,7 +86,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <ScrollView>
+      {/* <ScrollView> */}
 
         <View style={{ height:"15%", width:"100%", flexDirection:"row", paddingLeft:20,  paddingRight:20 }}>
           <View style={{width:"90%"}}>
@@ -110,7 +109,7 @@ const HomeScreen = () => {
           keyExtractor={(item) => item.id} shadowsVerticalScrollIndicator={false} shadowsHorizntallScrollIndicator={false}
           style={{width: "100%", padding: 10}}
         />
-      </ScrollView>
+      {/* </ScrollView> */}
     </View>
   );
 }

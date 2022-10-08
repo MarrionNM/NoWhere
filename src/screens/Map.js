@@ -1,4 +1,4 @@
-import { ListViewComponent, StyleSheet, Text, View,TextInput, Button } from 'react-native';
+import { StyleSheet, Text, View,TextInput, Button } from 'react-native';
 
 export default function DetailScreen() {
   return (

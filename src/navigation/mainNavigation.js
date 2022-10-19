@@ -8,7 +8,7 @@ import { BottomTabBar, createBottomTabNavigator } from '@react-navigation/bottom
 import Ionicicons from 'react-native-vector-icons/Ionicons'
 
 //Screns
-import HomeScreen from '../screens/Home';
+import HomeStackScreen from '../navigation/homeNavigation';
 import MapScreen from '../screens/Map';
 import ExploreScreen from '../screens/Explore';
 import DtlScreen from '../screens/Detail';
@@ -66,12 +66,10 @@ function mainNavigation(){
                     }}
                 >
             
-                <Tab.Screen name={homeName} component={HomeScreen}/>
+                <Tab.Screen name={homeName} component={HomeStackScreen}/>
                 <Tab.Screen name={exploreName} component={ExploreScreen}/>
                 <Tab.Screen name={mapName} component={MapScreen}/>
 
-                {/* Temp */}
-                <Stack.Screen name="DetailScreen" component={DtlScreen}/>        
             </Tab.Navigator>
         </NavigationContainer>
     );

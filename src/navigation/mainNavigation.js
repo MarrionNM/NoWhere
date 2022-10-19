@@ -3,7 +3,7 @@ import { StatusBar } from 'react-native';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { BottomTabBar, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Ionicicons from 'react-native-vector-icons/Ionicons'
 
@@ -11,11 +11,15 @@ import Ionicicons from 'react-native-vector-icons/Ionicons'
 import HomeScreen from '../screens/Home';
 import MapScreen from '../screens/Map';
 import ExploreScreen from '../screens/Explore';
+import DtlScreen from '../screens/Detail';
 
 //Screen names
 const homeName = 'Home';
 const exploreName = 'Explore';
 const mapName = 'Map';
+
+import {createStackNavigator} from '@react-navigation/stack';
+const Stack = createStackNavigator();
 
 // const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -23,11 +27,9 @@ const Tab = createBottomTabNavigator();
 function mainNavigation(){
     return(
         <NavigationContainer>
-            <StatusBar
-            barStyle="light-content" //it has few properties like dark-content, light-content and default
-            hidden={false} //if we do not want to show status bar than we will set hidden={false}
-            backgroundColor="yellow" //here we are setting the background color for the status bar
-            />
+
+            <StatusBar barStyle="light-content" translucent backgroundColor="rgba(0,0,0,0)"/> 
+
             <Tab.Navigator
                 initialRouteName={homeName} //Set starting component page
                 screenOptions={({route}) => ({
@@ -62,13 +64,14 @@ function mainNavigation(){
                         inaciveTintColor: 'grey',
                         labelStyle: { paddingBottom: 0, fontSize:14 }, style: {padding: 10, height: 80},
                     }}
-
                 >
-
+            
                 <Tab.Screen name={homeName} component={HomeScreen}/>
                 <Tab.Screen name={exploreName} component={ExploreScreen}/>
                 <Tab.Screen name={mapName} component={MapScreen}/>
-                
+
+                {/* Temp */}
+                <Stack.Screen name="DetailScreen" component={DtlScreen}/>        
             </Tab.Navigator>
         </NavigationContainer>
     );

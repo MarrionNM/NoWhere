@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View,TextInput, Button } from 'react-native';
 
-export default function DetailScreen() {
+export default function MapScreen({navigation}) {
   return (
     <View style={styles.container}>
       <Text>View Map</Text>
       <Button title="Go to Details"
-        // onPress={() => navigation.navigate('ExploreScreen')}
+        onPress={() => navigation.navigate('Explore')}
       />
     </View>
   );

@@ -196,7 +196,7 @@ export const PlaceData = [
         id: "06",
         name: "South America",
         Description: "South America is a continent entirely in the Western Hemisphere and mostly in the Southern Hemisphere, with a relatively small portion in the Northern Hemisphere. It can also be described as the southern subregion of a single continent called America.",
-        Population: "422 500 000",
+        Population: "422 500 000 000",
         image: pics.pic_south_america,
         attractions:[
             {

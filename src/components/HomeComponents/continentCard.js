@@ -27,7 +27,7 @@ const ContinentCard = ({navigation, continent}) => {
           <Text style={{fontSize:32, color:Colors.iconLight}}>{continent.name}</Text>
           <View style={{ left:"46%", flexDirection:"row", top:80, color:"white"}}>
             <Icon name="person-outline" size={16} color={Colors.iconLight}/> 
-            <Text style={{color:Colors.light}}>{continent.Population}</Text>
+            <Text style={{color:Colors.iconLight}}>{continent.Population}</Text>
           </View>
         </View>
       </View>

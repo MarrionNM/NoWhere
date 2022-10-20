@@ -41,82 +41,6 @@ export const PlaceData = [
 
     {
         id: "02",
-        name: "Africa",
-        Description: "Africa is the world's second-largest and second-most populous continent, after Asia in both cases. At about 30.3 million km² including adjacent islands, it covers 6% of Earth's total surface area and 20% of its land area. With 1.4 billion people as of 2021, it accounts for about 18% of the world's human population.",
-        Population: "1 216 000 000",
-        image: pics.pic_africa,
-        attractions:[
-            {
-                id: "001",
-                place: "Cape Town",
-                province: "South Africa",
-                images: "https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-cape-town-south-africa.jpg",
-                Description: "One of the most beloved destinations on the continent, Cape Town sits at the southern tip of South Africa, near where the Atlantic Ocean and Indian Ocean meet at the Cape of Good Hope. It is a culturally rich and visually stunning city that is very easy to fall in love with on a first visit."
-            },
-            {
-                id: "002",
-                place: "Zanzibar",
-                province: "Tanzania",
-                images: "https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-back-in-time-zanzibar-tanzania.jpg",
-                Description: "A visit to Zanzibar feels like stepping into another world, one where time stands still, and the only city, Stone Town, is a UNESCO World Heritage Site. The island in the Indian Ocean just off the coast of Tanzania is a place where Arab dhows (fishing boats) still ply the picture-perfect turquoise sea, and you can get lost in the beauty of Stone Town, wandering its narrow alleys past old mosques, vibrant bazaars, and riads with intricately carved doorways."
-            },
-            {
-                id: "003",
-                place: "Giza",
-                province: "Egypt",
-                images: "https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-great-pyramids-cairo-egypt.jpg",
-                Description: "Watching the sun rise or set over the Pyramids of Giza in Egypt from the back of a camel is an experience you'll never forget. The pyramids and the Great Sphinx date back to the 26th century BCE and are Egypt's most iconic attractions."
-            },
-            {
-                id: "004",
-                place: "Victoria Falls",
-                province: "Zimbabwe",
-                images: "https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-experience-victoria-falls-zimbabwe-zambia.jpg",
-                Description: "Visit Victoria Falls during the rainy seasons, when the water volume is high, and you'll understand why locals call this impressive waterfall The Smoke That Thunders. The sound of water rushing over rock before dropping into a pool some 300-plus-feet below sounds like the roll of thunder, and the mist that spews back up resembles thick smoke. It is an impressive sight."
-            },
-        ]
-    },
-
-    {
-        id: "03",
-        name: "South America",
-        Description: "South America is a continent entirely in the Western Hemisphere and mostly in the Southern Hemisphere, with a relatively small portion in the Northern Hemisphere. It can also be described as the southern subregion of a single continent called America.",
-        Population: "422 500 000",
-        image: pics.pic_south_america,
-        attractions:[
-            {
-                id: "001",
-                place: "Rio de Janeiro",
-                province: "Brazil ",
-                images: "https://cdn.travelstride.com/media/wysiwyg/rio-de-janeiro-809756_1920.jpg",
-                Description: "Rio is a top must see destination for many traveling to South America. The large seaside city in Brazil is known for the recongnizable Christ the Redeemer statue at the top of Corcovado Mountain, as well as Sugarloaf Mountain, a granite peak with cable cars to its summit, and the famous carnaval festivities which feature elaborate floats, incredible costumes, and samba dancers. Rio is widely considered as somewhere that the party doesn't stop!"
-            },
-            {
-                id: "002",
-                place: "Cartagena",
-                province: "Colombia",
-                images: "https://cdn.travelstride.com/media/wysiwyg/cartagena-colombia-south-america-lighthouse-2516803_1920.jpg",
-                Description: "Like many cities in South America, Cartagena in Colombia once held a reputation for being unsafe for travelers. Today, the vibrant coastal city has shaken it's ugly past and is an extremely popular attraction in South America. Heavily influenced by Spanish colonialism, the Old Town of Cartagena is a small walled city with a distintly European feel, right down to the cobblestone streets. There's a reason for the saying Castagena Hot, the high temperatures in Cartagena are on another level, especially when you add the 80-90% humidity. December-April is considered the dry season in Colombia, and it's also the peak tourist season."
-            },
-            {
-                id: "003",
-                place: "Iguassu Falls",
-                province: "Argentina",
-                images: "https://cdn.travelstride.com/media/wysiwyg/iguazu-falls-south-america-2773777_1280.jpg",
-                Description: "Eleanor Roosevelt expressed her awe at seeing Iguazu by saying poor Niagara! That should tell you something! This incredible waterfall on the Iguazu River is the largest in the world. It is actually claimed by both Argentina and Brazil, as it spans the border. The falls can be reached from either Foz de Iguaçu in Brazil, Puerto Iguazú in Argentina, or Cuidad del Este in Paraguay. Helicopter rides are offered in Brazil for aerial views of the falls. Inflatable boat rides are offered in Argentina that take visitors close to falls. Otherwise you can reach the falls by walking or driving through Iguazú National Park."
-            },
-            {
-                id: "004",
-                place: "Easter Island",
-                province: "Chile",
-                images: "https://cdn.travelstride.com/media/wysiwyg/easter-island-statues-moai-1857652_1920_1_.jpg",
-                Description: "Another enigmatic archaeological site in South America, Easter Island has puzzled historians for centuries. Recent discoveries have revealed that the nearly 1,000 large stone heads rising out of the ground on an island off the coast of Chile, were even larger than previously thought. These statues are called Moai, and they were created by the early Rapa Nui people."
-            },
-        ]
-    },
-
-    {
-        id: "04",
         name: "Europe",
         Description: "Europe is a landmass, which is either considered a continent in its own right or a subcontinent of Eurasia, located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere. Comprising the westernmost peninsulas of Eurasia, it shares the continental landmass of Afro-Eurasia with both Africa and Asia.",
         Population: "746 400 000",
@@ -154,11 +78,11 @@ export const PlaceData = [
     },
 
     {
-        id: "05",
+        id: "03",
         name: "Australia",
         Description: "Australia, officially the Commonwealth of Australia, is a sovereign country comprising the mainland of the Australian continent, the island of Tasmania, and numerous smaller islands.",
         Population: "25 000 000",
-        image: pics.pic2,
+        image: pics.pic_australia,
         attractions:[
             {
                 id: "001",
@@ -190,13 +114,128 @@ export const PlaceData = [
             },
         ]
     },
-    
+
+    {
+        id: "04",
+        name: "Africa",
+        Description: "Africa is the world's second-largest and second-most populous continent, after Asia in both cases. At about 30.3 million km² including adjacent islands, it covers 6% of Earth's total surface area and 20% of its land area. With 1.4 billion people as of 2021, it accounts for about 18% of the world's human population.",
+        Population: "1 216 000 000",
+        image: pics.pic_africa,
+        attractions:[
+            {
+                id: "001",
+                place: "Cape Town",
+                province: "South Africa",
+                images: "https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-cape-town-south-africa.jpg",
+                Description: "One of the most beloved destinations on the continent, Cape Town sits at the southern tip of South Africa, near where the Atlantic Ocean and Indian Ocean meet at the Cape of Good Hope. It is a culturally rich and visually stunning city that is very easy to fall in love with on a first visit."
+            },
+            {
+                id: "002",
+                place: "Zanzibar",
+                province: "Tanzania",
+                images: "https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-back-in-time-zanzibar-tanzania.jpg",
+                Description: "A visit to Zanzibar feels like stepping into another world, one where time stands still, and the only city, Stone Town, is a UNESCO World Heritage Site. The island in the Indian Ocean just off the coast of Tanzania is a place where Arab dhows (fishing boats) still ply the picture-perfect turquoise sea, and you can get lost in the beauty of Stone Town, wandering its narrow alleys past old mosques, vibrant bazaars, and riads with intricately carved doorways."
+            },
+            {
+                id: "003",
+                place: "Giza",
+                province: "Egypt",
+                images: "https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-great-pyramids-cairo-egypt.jpg",
+                Description: "Watching the sun rise or set over the Pyramids of Giza in Egypt from the back of a camel is an experience you'll never forget. The pyramids and the Great Sphinx date back to the 26th century BCE and are Egypt's most iconic attractions."
+            },
+            {
+                id: "004",
+                place: "Victoria Falls",
+                province: "Zimbabwe",
+                images: "https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-experience-victoria-falls-zimbabwe-zambia.jpg",
+                Description: "Visit Victoria Falls during the rainy seasons, when the water volume is high, and you'll understand why locals call this impressive waterfall The Smoke That Thunders. The sound of water rushing over rock before dropping into a pool some 300-plus-feet below sounds like the roll of thunder, and the mist that spews back up resembles thick smoke. It is an impressive sight."
+            },
+        ]
+    }, 
+
+    {
+        id: "05",
+        name: "North America",
+        Description: "North America is a continent in the Northern Hemisphere and almost entirely within the Western Hemisphere. It is bordered to the north by the Arctic Ocean, to the east by the Atlantic Ocean, to the southeast by South America and the Caribbean Sea, and to the west and south by the Pacific Ocean.",
+        Population: "579 000 000 000",
+        image: pics.pic_north_america,
+        attractions:[
+            {
+                id: "001",
+                place: "Grand Canyon",
+                province: "Colorado ",
+                images: "https://www.planetware.com/wpimages/2021/02/arizona-united-states-top-attractions-grand-canyon-panorama.jpg",
+                Description: "This incredible natural attraction is one of the most visited places in the United States. Carved out by the Colorado River, the Grand Canyon cuts deep into the landscape, creating dramatic cliff walls and ledges. Visitors standing on the rim of the canyon can see down to the canyon floor a mile below, and look out over the ridges and cliffs that run as far as the eye can see."
+            },
+            {
+                id: "002",
+                place: "Las Vegas Strip",
+                province: "Nevada",
+                images: "https://www.planetware.com/photos-large/US/nevada-las-vegas-strip-2.jpg",
+                Description: "Walking along the Las Vegas Strip, the main street leading through the city past the mega resorts, is like strolling through an amusement park for adults. Recreations of the New York skyline, the Eiffel Tower, the canals of Venice, and many more foreign sites line this famous street."
+            },
+            {
+                id: "003",
+                place: "Yosemite National Park",
+                province: "California",
+                images: "https://www.planetware.com/wpimages/2021/02/california-united-states-top-attractions-yosemite-view-of-valley.jpg",
+                Description: "One of America's most loved parks, Yosemite National Park is one of the best places to visit in California, particularly for nature lovers. Famous sights, like the incredible granite domes of El Capitan and Half Dome, have to be seen in person to fully appreciate their grandeur. The massive waterfalls that tumble off sheer cliffs from mountain snowfall or sudden summer rainstorms are another of the park's highlights."
+            },
+            {
+                id: "004",
+                place: "Golden Gate Bridge",
+                province: "San Francisco",
+                images: "https://www.planetware.com/photos-large/US/california-san-francisco-golden-gate-bridge-2.jpg",
+                Description: "Arching across San Francisco Bay, joining San Francisco and Marin County, the Golden Gate Bridge has been a California icon since it was built in the 1930s. Contrasting with the blue water, the bridge's orangish-red color is an aesthetic accent that brings a unique quality to the city. It also has a unique presence when it's shrouded in fog with just the peaks of the main towers projecting through the low-lying cloud. The bridge is approximately two miles long and part of Hwy 101 or SR 1. If the day is clear, one of the best viewing spots is on Conzelman Road, located in Golden Gate National Recreation Area."
+            },
+
+        ]
+    },
+
     {
         id: "06",
+        name: "South America",
+        Description: "South America is a continent entirely in the Western Hemisphere and mostly in the Southern Hemisphere, with a relatively small portion in the Northern Hemisphere. It can also be described as the southern subregion of a single continent called America.",
+        Population: "422 500 000",
+        image: pics.pic_south_america,
+        attractions:[
+            {
+                id: "001",
+                place: "Rio de Janeiro",
+                province: "Brazil ",
+                images: "https://cdn.travelstride.com/media/wysiwyg/rio-de-janeiro-809756_1920.jpg",
+                Description: "Rio is a top must see destination for many traveling to South America. The large seaside city in Brazil is known for the recongnizable Christ the Redeemer statue at the top of Corcovado Mountain, as well as Sugarloaf Mountain, a granite peak with cable cars to its summit, and the famous carnaval festivities which feature elaborate floats, incredible costumes, and samba dancers. Rio is widely considered as somewhere that the party doesn't stop!"
+            },
+            {
+                id: "002",
+                place: "Cartagena",
+                province: "Colombia",
+                images: "https://cdn.travelstride.com/media/wysiwyg/cartagena-colombia-south-america-lighthouse-2516803_1920.jpg",
+                Description: "Like many cities in South America, Cartagena in Colombia once held a reputation for being unsafe for travelers. Today, the vibrant coastal city has shaken it's ugly past and is an extremely popular attraction in South America. Heavily influenced by Spanish colonialism, the Old Town of Cartagena is a small walled city with a distintly European feel, right down to the cobblestone streets. There's a reason for the saying Castagena Hot, the high temperatures in Cartagena are on another level, especially when you add the 80-90% humidity. December-April is considered the dry season in Colombia, and it's also the peak tourist season."
+            },
+            {
+                id: "003",
+                place: "Iguassu Falls",
+                province: "Argentina",
+                images: "https://cdn.travelstride.com/media/wysiwyg/iguazu-falls-south-america-2773777_1280.jpg",
+                Description: "Eleanor Roosevelt expressed her awe at seeing Iguazu by saying poor Niagara! That should tell you something! This incredible waterfall on the Iguazu River is the largest in the world. It is actually claimed by both Argentina and Brazil, as it spans the border. The falls can be reached from either Foz de Iguaçu in Brazil, Puerto Iguazú in Argentina, or Cuidad del Este in Paraguay. Helicopter rides are offered in Brazil for aerial views of the falls. Inflatable boat rides are offered in Argentina that take visitors close to falls. Otherwise you can reach the falls by walking or driving through Iguazú National Park."
+            },
+            {
+                id: "004",
+                place: "Easter Island",
+                province: "Chile",
+                images: "https://cdn.travelstride.com/media/wysiwyg/easter-island-statues-moai-1857652_1920_1_.jpg",
+                Description: "Another enigmatic archaeological site in South America, Easter Island has puzzled historians for centuries. Recent discoveries have revealed that the nearly 1,000 large stone heads rising out of the ground on an island off the coast of Chile, were even larger than previously thought. These statues are called Moai, and they were created by the early Rapa Nui people."
+            },
+        ]
+    },
+
+    {
+        id: "07",
         name: "Antarctica",
         Description: "Antarctica is Earth's southernmost and least-populated continent. Situated almost entirely south of the Antarctic Circle and surrounded by the Southern Ocean, it contains the geographic South Pole.",
         Population: "5 000",
-        image: pics.pic11,
+        image: pics.pic_Antarctica,
         attractions:[
             {
                 id: "001",

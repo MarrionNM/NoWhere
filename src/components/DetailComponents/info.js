@@ -4,7 +4,7 @@ import Colors from '../../constants/colors';
 export default function info({route}) {
   const item = route;
   return (
-    <View style={{marginHorizontal:10, padding:10, backgroundColor:Colors.foreground}}>
+    <View style={{ marginHorizontal:10, padding:10, backgroundColor:Colors.foreground, marginBottom:10 }}>
       <Text>{item.Description}</Text>
     </View>
   );

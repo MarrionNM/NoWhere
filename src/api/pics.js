@@ -3,6 +3,8 @@ import pic_europe from '../../assets/places/europe.jpg';
 import pic_australia from '../../assets/places/australia.jpg';
 import pic_africa from '../../assets/places/africa.jpg';
 import pic_south_america from '../../assets/places/south_america.jpg';
+import pic_north_america from '../../assets/places/north_america.jpg';
+import pic_Antarctica from '../../assets/places/antarctica.jpg';
 
 import pic1 from '../../assets/places/vineyards.jpg';
 import pic2 from '../../assets/places/venice.jpg';
@@ -17,7 +19,9 @@ export default{
     pic_europe,
     pic_australia,
     pic_africa,
+    pic_north_america,
     pic_south_america,
+    pic_Antarctica,
     pic1,
     pic2,
     pic7,

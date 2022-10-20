@@ -1,13 +1,17 @@
-import { StyleSheet, Text, View, FlatList, Image } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Image, Pressable  } from 'react-native';
 import Colors from '../../constants/colors';
 
 const Card = ({item}) => {
     return(
         <View style={styles.card}>
-            <Text>{item.name}</Text>
-            <Image source={{uri: item.images}}
-                style={{width: "100%", height: "90%"}}/>
-          </View>
+            <Image source={{uri: item.images}} style={{width: "100%", height: "70%"}}/>
+            <View style={styles.body}>
+                <Text style={styles.name}>{item.place}</Text>
+                <Pressable style={styles.button}>
+                    <Text style={styles.buttonText}>Visit</Text>
+                </Pressable>
+            </View>
+        </View>
     )
 }
 
@@ -29,16 +33,51 @@ function attractions({route}) {
 const styles = StyleSheet.create({
     viewMore:{ 
         textAlign: "right",
-        color: "skyblue",
+        color: "#1784FE",
         fontSize: 14,
-        margin: 4
+        marginRight: 4,
+        marginBottom: 0
     },
 
     card:{ 
-        height: 180, width: 280,
-        marginRight: 10, padding: 4,
+        height: 220, width: 280,
+        marginTop: 0,
+        marginRight: 10,
         backgroundColor: Colors.foreground
-    }
+    },
+    body:{
+        padding: 5,
+        height:"30%"
+    },
+    name:{
+        fontSize:18,
+        padding:4
+    },
+    button: {
+        paddingLeft:20,
+        width:"100%",
+        height:"40%"
+      },
+
+    button: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 8,
+        paddingHorizontal: 30,
+        margin:4,
+        borderRadius: 4,
+        elevation: 3,
+        backgroundColor: Colors.primary,
+        width:"36%",
+        height:"60%"
+      },
+      buttonText: {
+        fontSize: 12,
+        lineHeight: 21,
+        fontWeight: 'bold',
+        letterSpacing: 0.25,
+        color: 'white',
+      },
 });
 
 export default attractions;

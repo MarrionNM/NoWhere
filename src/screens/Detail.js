@@ -8,8 +8,6 @@ export default function DetailScreen({navigation, route}) {
   const item = route.params;
   return (
     <ScrollView showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}>
-      <StatusBar barStyle="light-content" translucent backgroundColor="rgba(0,0,0,0)"/>
-
       <HeaderComponent navigation={navigation} route={item}/>
       <AttractionsComponent route={item}/>
       <InfoComponent route={item}/>

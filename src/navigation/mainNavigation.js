@@ -1,17 +1,15 @@
 import * as React from 'react';
 import { StatusBar } from 'react-native';
 
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { BottomTabBar, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Ionicicons from 'react-native-vector-icons/Ionicons'
 
-//Screns
+//Screens
 import HomeStackScreen from '../navigation/homeNavigation';
 import MapScreen from '../screens/Map';
 import ExploreScreen from '../screens/Explore';
-import DtlScreen from '../screens/Detail';
 
 //Screen names
 const homeName = 'Home';
@@ -21,14 +19,12 @@ const mapName = 'Map';
 import {createStackNavigator} from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
-// const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 function mainNavigation(){
     return(
         <NavigationContainer>
-
-            <StatusBar barStyle="light-content" translucent backgroundColor="rgba(0,0,0,0)"/> 
+            <StatusBar backgroundColor='blue' barStyle='light-content' />
 
             <Tab.Navigator
                 initialRouteName={homeName} //Set starting component page

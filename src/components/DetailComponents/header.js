@@ -12,20 +12,21 @@ const Header = ({navigation, route}) => {
           <Icon name="bookmark-border" size={28} color={Colors.white}/>
         </View>
 
-        <View>
-          <Text style={{fontSize:42, textAlign:"center", width:"100%", color:Colors.iconLight}}>{item.name}</Text>
-          <View style={{ left:"46%", flexDirection:"row", top:80, color:"white"}}>
-            <Icon name="person-outline" size={26} color={Colors.iconLight}/> 
+        <View style={{position:"absolute", justifyContent:"center", alignItems:"center", width:"100%", height:"100%"}}>
+          <Text style={{fontSize:42, color:Colors.iconLight}}>{item.name}</Text>
+          <View style={{ left:"46%", flexDirection:"row", top:100, color:"white"}}>
+            <Icon name="person-outline" size={22} color={Colors.iconLight}/> 
             <Text style={{color:Colors.iconLight}}>{item.Population}</Text>
           </View>
         </View>
+
       </ImageBackground>
   )
 }
 
 const styles = StyleSheet.create({
   headerImage:{
-    height: 400,
+    height: 300,
     borderBottomLeftRadius: 40,
     borderBottomRightRadius: 40,
     overflow: "hidden",
@@ -38,7 +39,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     justifyContent: "space-between",
   },
-  
 });
 
 export default Header;

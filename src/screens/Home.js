@@ -6,7 +6,6 @@ import HeaderComponent from '../components/HomeComponents/header';
 import FilterComponent from '../components/HomeComponents/filterSearch';
 import ContinentComponent from '../components/HomeComponents/continentCard';
 
-import { NavigationContainer } from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
@@ -38,6 +37,7 @@ const HomeScreen = ({navigation}) => {
   // }
   return (
     <View style={styles.container}>
+
       <HeaderComponent/>
       <FilterComponent/>
 

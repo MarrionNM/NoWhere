@@ -13,7 +13,6 @@ import pic9 from '../../assets/places/emily-cressey-nqSu05LyDCY-unsplash.jpg';
 import pic11 from '../../assets/places/art-rachen-lBjqCsOGjx0-unsplash.jpg';
 import pic12 from '../../assets/places/alexey-artyukh-DLf3uwkRNPA-unsplash.jpg';
 
-
 export default{
     pic_asia,
     pic_europe,
